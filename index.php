@@ -1,4 +1,6 @@
-<?php include "conn.php"; ?>
+<?php   include "conn.php"; 
+        date_default_timezone_set('Asia/Jakarta');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,8 +81,8 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
       <body class="skin-black">
         <!-- header logo: style can be found in header.less -->
         <header class="header">
-            <a href="index.html" class="logo">
-                PerPusWeb
+            <a href="." class="logo">
+                SMAK COR JESU
             </a>
 
             <!-- Header Navbar: style can be found in header.less -->
@@ -128,7 +130,7 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
             <div class="alert alert-info alert-dismissable">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
              <!--<marquee behavior="alternate" direction="left" onmouseover="this.stop();" onmouseout="this.start();">-->
-		<b>Selamat Datang di PerPusWeb (Perpustakaan Berbasis Website) Free Version, Untuk Login Admin silahkan klik Icon User atau klik <a href="login.html">disini</a></b>
+		<b>Selamat Datang di Web Perpustakaan SMAK COR JESU</b>
           </div>
             </div>
 
@@ -231,9 +233,13 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
                           </div>
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Perlu</label>
-                              <div class="col-sm-10">
-                                  <input name="perlu1" type="text" id="perlu1" class="form-control" placeholder="Keperluan" required />
-                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                                <div class="col-sm-6">
+                                <select class="form-control" name="perlu1" id="perlu1">
+                                <option> -- Pilih Salah Satu --</option>
+                                <option value="Membaca"> Membaca</option>
+                                <option value="Pinjam Buku"> Pinjam Buku</option>
+                                <option value="Pinjam Buku"> Mengembalikan Buku</option>
+                                </select>
                               </div>
                           </div>
                           <div class="form-group">
@@ -344,27 +350,20 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">PerPusWeb Info</h4>
+        <h4 class="modal-title" id="myModalLabel">Web Perpustakaan</h4>
       </div>
       <div class="modal-body">
-      PerPusWeb adalah aplikasi perpustakaan bebasis website yang responsif, PerPusWeb Versi ini adalah versi free untuk mendapatkan PerPusWeb Pro Hubungi
-       Hakko Bio Richard di :
+       Web Perpustakaan ini di buat untuk memudahkan pendataan pengunjung, pencarian buku dan kemudahan transaksi.
+       Jika ada kendala dapat menghubungi admin di :
       <table>
       <tr>
-      <td>No Telepon</td> <td>:</td> <td>0856 949 848 03</td>
+      <td>Staf Perpustakaan</td> <td>:</td> <td>Di tempat</td>
       </tr>
       <br />
       <tr>
-      <td>E-mail</td><td>:</td> <td><a href="mailto:hakkobiorichard@gmail.com">hakkobiorichard@gmail.com</a> | <a href="mailto:hakko_bio_richard@yahoo.co.id">hakko_bio_richard@yahoo.co.id</a></td>
+      <td>E-mail</td><td>:</td> <td><a href="mailto:perpus@smakcorjesu.sch.id">perpus@smakcorjesu.sch.id</a></td>
       </tr> 
       <br />
-      <tr>
-      <td>Blog</td>       <td>:</td> <td><a href="http://www.hakkoblogs.com" target="_blank">www.hakkoblogs.com</a></td>
-      </tr>
-      <br />
-      <tr>
-      <td>Website</td>    <td>:</td> <td><a href="http://www.niqoweb.com" target="_blank">www.niqoweb.com</a></td>
-      </tr>
        </table>
       </div>
       <div class="modal-footer">
