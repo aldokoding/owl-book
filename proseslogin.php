@@ -32,6 +32,7 @@ if (mysql_num_rows($q) == 1) {
 
 	header('location:admin/index.php');
 } else {
+	echo "<script>alert('Username atau Password Salah!');</script>";
 	header('location:login.html?error=4');
 }
 ?>
